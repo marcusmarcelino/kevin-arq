@@ -1,0 +1,157 @@
+ /* Fullscreen Menu */
+ 
+ .fullscreen-menu-container {
+   position: fixed; /* o torno fixo */
+   top: 12.5rem; /* adciono uma distancia do topo para influenciar na animação */
+   left: 0; /* adiciono o posicionamento esquerdo e acordo com a tela */
+   z-index: 100; /* estabeleço que ao ser chamado ele irá sobrepor qualquer outro elemento do site */
+   width: 100vw; /* estabeleço a largura da tela como padrão */
+   height: 100vh; /* estabeleço a altura da tela como padrão */
+   overflow: scroll; /* Permito a rolagem dentro do menu fullscreen quando o conteúdo for maior que a janela de visualização */
+   background-color: rgba(255,255,255,0.98); /* adiciono a cor de fundo */
+   opacity: 0; /* aplico a transparencia 0 para que ele fique escondido até ser chamado pelo clicar do botão */
+   pointer-events: none; /* removo os efeitos de clique até ser chamado pelo clicar do botão */
+   transition: top .6s cubic-bezier(0, 0.71, 0, 1.43), opacity 200ms ease-in; /* adiciono a animação de trnsição do menu fullscreen, a forma como ele surgirá ///top 300ms cubic-bezier(0, 0.63, 0.45, 1.19), opacity 200ms ease-in; Transition the top and opacity */
+}
+
+.fullscreen-menu-container.is-open {
+   opacity: 1; /* ele ficará visivel quando for chamado */
+   top: 0; /* ficará ligado ao topo da tela */
+   pointer-events: auto; /* a agora é ativado os efeitos de clique no seu conteúdo */
+}
+
+#btn-closer-full-scran {
+   top: -43%;
+   right: -83%;
+   font-size: 3em;
+   position: relative;
+}
+
+.fullscreen-menu {
+   text-align: center;
+   max-width: 62rem;
+   padding: 6rem 2rem 4rem;
+   width: 100%;
+}
+
+.fullscreen-menu a{
+   color: #fff;
+   text-decoration: none;
+}
+
+/* Imagem redonda do dono ou dev do site */
+
+.fullscreen-menu_image-container {
+   width: 5rem; 
+   height: 5rem;
+   border-radius: 50%;
+   background-image: url('../../assets/img/chad.png');
+   background-size: cover;
+   background-position: center center;
+   margin: 0 auto 1.5rem;
+}
+
+.fullscreen-menu_nav {
+   margin: 3rem 0;
+}
+
+.fullscreen-menu_nav ul {
+   list-style: none;
+   margin: 0; 
+   padding: 0;
+}
+
+.fullscreen-menu_nav a {
+   display: block;
+   font-size: 1.4rem;
+   padding: 1rem;
+   color: #A2A2A2;
+   text-decoration: none;
+   transition: color 200ms ease-in;/* Efeito de transição da cor das letras ao passar mouse */
+}
+
+.fullscreen-menu_nav a:hover {
+   color: rgb(21, 24, 61);
+}
+
+.fullscreen-menu .social-button {
+   margin: 0 0.5rem;
+   height: 3.75rem;
+   width: 3.75rem;
+   font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 46rem) {
+   .fullscreen-menu-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+
+   .fullscreen-menu {
+   padding: 0;
+   }
+
+   .fullscreen-menu_nav {
+   margin: 4rem 0;
+   }
+
+   .fullscreen-menu_nav ul {
+      display: flex; /* transforma a lista não ordenada em um contêiner flexível */
+      justify-content: space-between; /* compartilha o espaço disponível entre os itens da lista */
+   }
+}
+
+.social-button {
+   display: inline-flex;
+   align-items: center; /* Centralizar e alinhar na vertical */
+   justify-content: center; /* Centralizar na horizontal */
+   height: 3rem;
+   width: 3rem;
+   font-size: 1.4rem;
+   color: white;
+   border-radius: 50%;
+   text-decoration: none;
+   transition: background-color 150ms ease-in-out; /* Transition background colour on hover */
+   margin-right: 0.1rem;
+   }
+
+   .icon-fullscreen-twitter {
+   background-color: #2dabd4;
+   }
+
+   .icon-fullscreen-twitter:hover {
+   background-color: #1a627a;
+   }
+
+   .icon-fullscreen-facebook {
+   background-color: #2b3fb1;
+   }
+
+   .icon-fullscreen-facebook:hover {
+   background-color: #1b2870;
+   }
+
+   .icon-fullscreen-github {
+   background-color: #222020;
+   }
+
+   .icon-fullscreen-github:hover {
+   background-color:  #0c0c0c;
+   }
+
+   .icon-fullscreen-instagram {
+   background-color: #6b238d;
+   }
+
+   .icon-fullscreen-instagram:hover {
+   background-color: #371247;
+   }
+
+   .icon-fullscreen-linkedin {
+   background-color: #102894;
+   }
+
+   .icon-fullscreen-linkedin:hover {
+   background-color: #0e1b55;
+   }
