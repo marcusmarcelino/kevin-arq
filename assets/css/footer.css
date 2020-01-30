@@ -7,3 +7,16 @@
    font-size: 10pt;
    font-weight: 800 !important;
 }
+
+@media screen and (max-width: 769px){
+   #footer #menu-footer {
+      text-align: center!important;
+      }
+
+   #footer div,
+   #footer .nav ul,
+   #footer ul{
+      justify-content: center;
+      text-align: center;
+   }
+}
