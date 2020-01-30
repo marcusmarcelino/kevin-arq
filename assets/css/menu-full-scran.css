@@ -6,7 +6,7 @@
    width: 100vw; 
    height: 100vh; 
    overflow: scroll; 
-   background: #283953; 
+   background: #184046;
    opacity: 0; 
    pointer-events: none;
    transition: top .6s cubic-bezier(0, 0.71, 0, 1.43), opacity 200ms ease-in;
