@@ -3,23 +3,7 @@
    margin: 0 auto;
 }
 
-#card-footer-jonathan h6 {
+#card-footer h6 {
    font-size: 10pt;
    font-weight: 800 !important;
-}
-
-#info-footer-insta p{
-   font-size: 10pt;
-}
-
-#info-footer-insta a{
-   font-size: 23pt;
-}
-
-#info-footer-insta a:hover{
-   font-size: 3rem;
-}
-
-#info-footer-insta {
-   background-color: #8a96dff8 !important;
 }

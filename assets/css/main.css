@@ -2,19 +2,9 @@ body {
     background: #191d21;
 }
 
+/*Banner - header*******************/
 #banner {
     min-height: 750px;
-}
-
-#one {
-    min-height: 400px;
-    padding: 2rem 0;
-    background: #fff;
-    color:  #3e3939;
-}
-
-#two,#three{
-    color: #fff;
 }
 
 .zoom img {
@@ -32,6 +22,53 @@ body {
 .zoom:hover{
     -webkit-box-shadow: 5px 5px 15px 5px #FFFFFF; 
     box-shadow: 5px 5px 15px 5px #FFFFFF;
+}
+
+.logo-avatar{
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 30%;
+}
+
+.avatar {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    max-width: 12%;
+    margin: 0 auto;
+}
+
+.avatar img{
+    height: 150px;
+}
+
+#banner-list-social-icon {
+    font-size: 2rem;;
+}
+
+#nav ul li a{
+    transition: color 200ms ease-in;
+}
+
+#menu-footer ul li a:hover,
+#nav ul li a:hover {
+    color: yellowgreen;
+}
+
+/*Geral*******************/
+
+#two,#three{
+    color: #fff;
+    padding: 8rem 0;
+}
+
+/*Info*******************/
+
+#info {
+    min-height: 400px;
+    padding: 2rem 0;
+    background: #fff;
+    color:  #3e3939;
 }
 
 #img-border1-banner {
@@ -61,39 +98,7 @@ body {
     border: 6px solid #84716d;
 }
 
-.logo-avatar{
-    border: 5px solid #fff;
-    border-radius: 50%;
-    margin: 0 auto;
-    max-width: 30%;
-}
-
-
-
-#nav ul li a{
-    transition: color 200ms ease-in;
-}
-
-#nav ul li a:hover {
-    color: yellowgreen;
-}
-
-#banner-list-social-icon {
-    font-size: 2rem;;
-}
-
-.avatar {
-    border: 5px solid #fff;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    border-radius: 50%;
-    max-width: 12%;
-    margin: 0 auto;
-}
-
-.avatar img{
-    height: 150px;
-}
+/*btn-navPanel - Header*******************/
 
 #btn-navPanel {
     font-size: 2.5rem;
