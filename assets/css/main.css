@@ -2,24 +2,40 @@ body {
     background: #191d21;
 }
 
-#one {
-    min-height: 600px;
-    padding: 4rem 0;
+#banner {
+    min-height: 750px;
 }
 
-/*#one {
+#one {
     min-height: 400px;
     padding: 2rem 0;
     background: #fff;
-    color: #232323;
-}*/
+    color:  #3e3939;
+}
 
-#one,#two,#three{
+#two,#three{
     color: #fff;
 }
 
+.zoom img {
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.zoom:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.zoom:hover{
+    -webkit-box-shadow: 5px 5px 15px 5px #FFFFFF; 
+    box-shadow: 5px 5px 15px 5px #FFFFFF;
+}
+
 #img-border1-banner {
-    border: 10px solid #8f92eb;
+    border: 10px solid #4c50c5;
     position: relative;
     right: -10px;
     bottom: -10px;
@@ -28,7 +44,7 @@ body {
 }
 
 #img-border2-banner {
-    border: 10px solid #fff;
+    border: 10px solid #added3;
     position: relative;
     left: -25px;
     top: -25px;
@@ -42,7 +58,7 @@ body {
     position: relative;
     bottom: -30px;
     right: -19px;
-    border: 3px solid lavenderblush;
+    border: 6px solid #84716d;
 }
 
 .logo-avatar{
@@ -51,6 +67,8 @@ body {
     margin: 0 auto;
     max-width: 30%;
 }
+
+
 
 #nav ul li a{
     transition: color 200ms ease-in;
@@ -80,6 +98,12 @@ body {
 #btn-navPanel {
     font-size: 2.5rem;
     margin: 0 auto;
+}
+
+#btn-navPanel:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @media (min-width: 1199px) {

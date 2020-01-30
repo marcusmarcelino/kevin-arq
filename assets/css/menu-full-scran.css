@@ -6,7 +6,7 @@
    width: 100vw; 
    height: 100vh; 
    overflow: scroll; 
-   background: #fffffffd; 
+   background: #283953; 
    opacity: 0; 
    pointer-events: none;
    transition: top .6s cubic-bezier(0, 0.71, 0, 1.43), opacity 200ms ease-in;
@@ -42,7 +42,7 @@
    width: 5rem; 
    height: 5rem;
    border-radius: 50%;
-   background-image: url('../../assets/img/chad.png');
+   background-image: url('../../assets/img/kevin.jpg');
    background-size: cover;
    background-position: center center;
    margin: 0 auto 1.5rem;
@@ -68,7 +68,7 @@
 }
 
 .fullscreen-menu_nav a:hover {
-   color: rgb(21, 24, 61);
+   color: rgb(255, 255, 255);
 }
 
 .fullscreen-menu .social-button {
