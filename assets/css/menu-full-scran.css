@@ -1,23 +1,22 @@
- /* Fullscreen Menu */
- 
- .fullscreen-menu-container {
-   position: fixed; /* o torno fixo */
-   top: 12.5rem; /* adciono uma distancia do topo para influenciar na animação */
-   left: 0; /* adiciono o posicionamento esquerdo e acordo com a tela */
-   z-index: 100; /* estabeleço que ao ser chamado ele irá sobrepor qualquer outro elemento do site */
-   width: 100vw; /* estabeleço a largura da tela como padrão */
-   height: 100vh; /* estabeleço a altura da tela como padrão */
-   overflow: scroll; /* Permito a rolagem dentro do menu fullscreen quando o conteúdo for maior que a janela de visualização */
-   background-color: rgba(255,255,255,0.98); /* adiciono a cor de fundo */
-   opacity: 0; /* aplico a transparencia 0 para que ele fique escondido até ser chamado pelo clicar do botão */
-   pointer-events: none; /* removo os efeitos de clique até ser chamado pelo clicar do botão */
-   transition: top .6s cubic-bezier(0, 0.71, 0, 1.43), opacity 200ms ease-in; /* adiciono a animação de trnsição do menu fullscreen, a forma como ele surgirá ///top 300ms cubic-bezier(0, 0.63, 0.45, 1.19), opacity 200ms ease-in; Transition the top and opacity */
+.fullscreen-menu-container {
+   position: fixed;
+   top: 12.5rem;
+   left: 0; 
+   z-index: 100; 
+   width: 100vw; 
+   height: 100vh; 
+   overflow: scroll; 
+   background: #fffffffd; 
+   opacity: 0; 
+   pointer-events: none;
+   transition: top .6s cubic-bezier(0, 0.71, 0, 1.43), opacity 200ms ease-in;
 }
 
 .fullscreen-menu-container.is-open {
-   opacity: 1; /* ele ficará visivel quando for chamado */
-   top: 0; /* ficará ligado ao topo da tela */
-   pointer-events: auto; /* a agora é ativado os efeitos de clique no seu conteúdo */
+   opacity: 1; 
+   top: 0; 
+   pointer-events: auto; 
+   overflow-x:hidden;
 }
 
 #btn-closer-full-scran {
@@ -38,8 +37,6 @@
    color: #fff;
    text-decoration: none;
 }
-
-/* Imagem redonda do dono ou dev do site */
 
 .fullscreen-menu_image-container {
    width: 5rem; 
@@ -67,7 +64,7 @@
    padding: 1rem;
    color: #A2A2A2;
    text-decoration: none;
-   transition: color 200ms ease-in;/* Efeito de transição da cor das letras ao passar mouse */
+   transition: color 200ms ease-in;
 }
 
 .fullscreen-menu_nav a:hover {
@@ -97,22 +94,22 @@
    }
 
    .fullscreen-menu_nav ul {
-      display: flex; /* transforma a lista não ordenada em um contêiner flexível */
-      justify-content: space-between; /* compartilha o espaço disponível entre os itens da lista */
+      display: flex;
+      justify-content: space-between;
    }
 }
 
 .social-button {
    display: inline-flex;
-   align-items: center; /* Centralizar e alinhar na vertical */
-   justify-content: center; /* Centralizar na horizontal */
+   align-items: center;
+   justify-content: center;
    height: 3rem;
    width: 3rem;
    font-size: 1.4rem;
    color: white;
    border-radius: 50%;
    text-decoration: none;
-   transition: background-color 150ms ease-in-out; /* Transition background colour on hover */
+   transition: background-color 150ms ease-in-out;
    margin-right: 0.1rem;
    }
 
