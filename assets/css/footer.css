@@ -20,3 +20,8 @@
       text-align: center;
    }
 }
+
+#footer hr:nth-child(1){
+   margin-left: 8rem;
+   margin-right: 8rem;
+}
