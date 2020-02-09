@@ -31,6 +31,10 @@ body {
     max-width: 30%;
 }
 
+.space-logo {
+    min-height: 450px;
+}
+
 .avatar {
     border: 5px solid #fff;
     border-radius: 50%;
@@ -67,12 +71,12 @@ body {
 #info {
     min-height: 400px;
     padding: 2rem 0;
-    background: #fff;
-    color:  #3e3939;
+    background: #151515;
+    color: #e0dfdf;    
 }
 
 #img-border1-banner {
-    border: 10px solid #4c50c5;
+    border: 10px solid #ababab;
     position: relative;
     right: -10px;
     bottom: -10px;
@@ -81,7 +85,7 @@ body {
 }
 
 #img-border2-banner {
-    border: 10px solid #added3;
+    border: 10px solid #4c4c4c;
     position: relative;
     left: -25px;
     top: -25px;

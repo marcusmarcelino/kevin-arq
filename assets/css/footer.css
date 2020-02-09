@@ -1,6 +1,8 @@
 .footer-avatar{
-   max-width: 60%;
-   margin: 0 auto;
+   border: 5px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 50%;
 }
 
 #card-footer h6 {
