@@ -5,24 +5,59 @@
 }
 
 #painel1 {
-  margin: 0 90px;
+  margin: 0 100px auto;
   padding: 0 1rem;
 }
 
 #painel2 {
-  margin: 10px 40px;
+  margin: 30px 40px;
   padding: 0 1rem;
 }
 
-#painel1 #lightbox-mixed img,
 #painel2 #lightbox-captions img {
 	transition: .3s;	
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	filter: gray; /* IE */
 }
-#painel1 #lightbox-mixed img:hover ,
+
 #painel2 #lightbox-captions img:hover {
 	-webkit-filter: none;	
 	filter: none;
+}
+
+#painel1 #lightbox-mixed .mdb-lightbox figure img {
+  border-radius: 5px;
+}
+
+#painel1 #lightbox-mixed .mdb-lightbox figure,
+#painel1 #lightbox-mixed .mdb-lightbox figure:before {
+  transition: background-color .4s ease-in-out;
+}
+
+#painel1 #lightbox-mixed .mdb-lightbox figure:hover:before{
+  content: '';
+  background: rgba(1, 22, 116, 0.69);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+#painel1 #lightbox-mixed .mdb-lightbox figure .legend-opacity {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  z-index: 100;
+  transition: opacity .2s ease-in-out;
+  display: none;
+  opacity: 0;
+}
+
+#painel1 #lightbox-mixed .mdb-lightbox figure:hover .legend-opacity{
+  display: block;
+  opacity: 1;
 }

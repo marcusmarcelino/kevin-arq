@@ -4,6 +4,8 @@
 @import 'avatar.css';
 @import 'nav.css';
 @import 'scrollbar.css';
+@import 'info.css';
+@import 'certifications.css';
 
 body {
     background: #191d21;
@@ -14,12 +16,13 @@ body {
     color: #fff;
 }
 
-/*Info*******************/
-#info {
-    min-height: 400px;
-    padding: 2rem 0;
-    color: #e0dfdf; 
-    background: linear-gradient(to bottom, rgba(0,0,0,0.42) 0%,rgba(0,0,0,0.39) 24%,rgba(0,0,0,0.3) 38%,rgba(0,0,0,0.28) 40%,rgba(0,0,0,0.22) 47%,rgba(0,0,0,0.1) 60%,rgba(0,0,0,0.03) 73%,rgba(0,0,0,0) 100%);   
+#banner,
+#two {
+    font-family: 'quicksand';
+}
+
+#three {
+    font-family: sans-serif;
 }
 
 @media (min-width: 1199px) {
