@@ -1,0 +1,28 @@
+#painel1,
+#painel2 {
+  background: #23292e;
+  border-radius: 10px;
+}
+
+#painel1 {
+  margin: 0 90px;
+  padding: 0 1rem;
+}
+
+#painel2 {
+  margin: 10px 40px;
+  padding: 0 1rem;
+}
+
+#painel1 #lightbox-mixed img,
+#painel2 #lightbox-captions img {
+	transition: .3s;	
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray; /* IE */
+}
+#painel1 #lightbox-mixed img:hover ,
+#painel2 #lightbox-captions img:hover {
+	-webkit-filter: none;	
+	filter: none;
+}

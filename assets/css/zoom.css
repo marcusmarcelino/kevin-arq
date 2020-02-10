@@ -1,0 +1,16 @@
+.zoom img {
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.zoom:hover img{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.zoom:hover{
+  -webkit-box-shadow: 5px 5px 15px 5px #FFFFFF; 
+  box-shadow: 5px 5px 15px 5px #FFFFFF;
+}
