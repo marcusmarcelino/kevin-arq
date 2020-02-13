@@ -35,8 +35,14 @@
 #info .col-md-4 h1,
 #info .col-md-4 h2{
   margin-bottom: 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
 }
 
+#info p,
+#info span {
+  font-family: 'Slabo 27px', serif;
+}
 
 #info .col-md-4 h2{
   margin-left: 80px;
@@ -48,6 +54,7 @@
 
 #info .col-md-4 .p-id{
   margin-left: 60px;
+  line-height: 10px;
 }
 
 #info .col-md-4 h1 {

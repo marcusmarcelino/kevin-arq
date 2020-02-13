@@ -1,3 +1,47 @@
 #certifications{
   color: #eeeeee; 
 }
+
+#certifications figure span {
+  /*position: absolute;
+  top: 22px;
+  right: 30px;*/
+  line-height: 10px;
+}
+
+#certifications figure span p {
+  margin-bottom: 10px;
+}
+
+#certifications figure span i {
+  font-size: 0.7rem;
+}
+
+#certifications figure span i.fa-file{
+  font-size: 1rem;
+  color: #4b5e70
+}
+
+#certifications figure span i.fa-certificate {
+  color: #ffff7d;
+}
+
+#certifications figure img {
+  max-height: 6rem;
+  transition: .3s;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: rgba(128, 128, 128, 0.486);
+}
+
+#certifications figure img:hover {
+	-webkit-filter: none;	
+  filter: none;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#certifications div.container div.row {
+  padding-bottom: 6rem;
+}

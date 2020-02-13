@@ -1,7 +1,7 @@
 # Web Site - Kevin Douglas
 
 <div align="center">
-  <img height="200" width="200" src="./assets/img/kevin.jpg" align="center"></img>
+  <img height="200" width="200" src="./assets/img/persona/kevin.jpg" align="center"></img>
 </div>
 
 <h1 align="center"> <strong> Kevin Douglas </strong> </h1>

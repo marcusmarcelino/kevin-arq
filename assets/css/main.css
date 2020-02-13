@@ -6,6 +6,9 @@
 @import 'scrollbar.css';
 @import 'info.css';
 @import 'certifications.css';
+@import 'footer.css';
+@import 'social-icons.css';
+@import 'menu-full-scran.css';
 
 body {
     background: #191d21;
